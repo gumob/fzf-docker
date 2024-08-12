@@ -1,8 +1,26 @@
 # fzf-docker
 
+## Table of Contents
+
+- [fzf-docker](#fzf-docker)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+  - [Installation](#installation)
+    - [Install fzf using Homebrew](#install-fzf-using-homebrew)
+    - [Download `fzf-docker` to your home directory](#download-fzf-docker-to-your-home-directory)
+    - [How to set up using key bindings](#how-to-set-up-using-key-bindings)
+      - [Zsh](#zsh)
+      - [Bash](#bash)
+    - [How to setup without key bindings](#how-to-setup-without-key-bindings)
+  - [Usage](#usage)
+    - [Overview of available commands](#overview-of-available-commands)
+    - [Default command for `docker exec in interactive mode`](#default-command-for-docker-exec-in-interactive-mode)
+  - [License](#license)
+
+
 ## Overview
 
-This is a plugin that allows you to execute Docker commands using keyboard shortcuts with [`fzf`](https://github.com/junegunn/fzf) and [`docker`](https://www.docker.com/).
+This is a plugin that allows you to execute Docker commands using keyboard shortcuts, based on [`MartinRamm/fzf-docker`](https://github.com/MartinRamm/fzf-docker) and utilizing [`fzf`](https://github.com/junegunn/fzf) and [`docker`](https://www.docker.com/).
 
 ## Installation
 
@@ -19,7 +37,7 @@ Please refer to the [fzf official documentation](https://github.com/junegunn/fzf
 wget -O ~/.fzfdocker https://raw.githubusercontent.com/gumob/fzf-docker/main/fzfdocker
 ```
 
-### How to Set Up Using Key Bindings
+### How to set up using key bindings
 
 Source `fzf` and `fzfdocker` in your run command shell.<br/>
 By default, no key bindings are set. If you want to set the key binding to `Ctrl+K`, please configure it as follows:
@@ -72,9 +90,9 @@ Source run command
 source ~/.bashrc
 ```
 
-### How to Use Without Key Bindings
+### How to setup without key bindings
 
-To run `fzf-docker` without using a keyboard shortcut, remove the line `export FZF_DOCKER_KEY_BINDING='key-combination'` from the above run command and enter the following command in the shell.
+To run `fzf-docker` without using a keyboard shortcut, remove the line `export FZF_DOCKER_KEY_BINDING='key-combination'` from the run command and enter the following command in the shell.
 
 ```shell
 fzf-docker
