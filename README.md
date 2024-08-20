@@ -17,7 +17,6 @@
     - [Default command for `docker exec in interactive mode`](#default-command-for-docker-exec-in-interactive-mode)
   - [License](#license)
 
-
 ## Overview
 
 This is a plugin that allows you to execute Docker commands using keyboard shortcuts, based on [`MartinRamm/fzf-docker`](https://github.com/MartinRamm/fzf-docker) and utilizing [`fzf`](https://github.com/junegunn/fzf) and [`docker`](https://www.docker.com/).
@@ -25,6 +24,7 @@ This is a plugin that allows you to execute Docker commands using keyboard short
 ## Installation
 
 ### Install [fzf](https://github.com/junegunn/fzf) using Homebrew
+
 ```shell
 brew install fzf
 ```
@@ -62,6 +62,7 @@ source ~/.fzfdocker
 ```
 
 Source run command
+
 ```shell
 source ~/.zshrc
 ```
@@ -86,6 +87,7 @@ source ~/.fzfdocker
 ```
 
 Source run command
+
 ```shell
 source ~/.bashrc
 ```
@@ -113,7 +115,7 @@ fzf-docker
 | docker stop                                                                        | multiple |                                                                                                              |
 | docker stop all running containers                                                 |          |                                                                                                              |
 | docker stop and remove container                                                   | multiple |                                                                                                              |
-| docker stop and remove all container                                               |          |                                                                                                              
+| docker stop and remove all container                                               |          |
 | docker kill                                                                        | multiple |                                                                                                              |
 | docker kill all containers                                                         |          |                                                                                                              |
 | docker kill and remove container                                                   | multiple |                                                                                                              |
@@ -137,11 +139,13 @@ The fallback command used to `exec` into a container is similar to `zsh || bash 
 Useful standards are already implemented for images like `mysql` or `mongo` (PRs to add more default commands are appreciated).
 
 You may however add custom commands that `docker exec in interactive mode` will then use to `exec` into a container. To do this
+
 1. Download the `.fzf-docker-exec.template` to your home directory, omitting the `.template` extension:
 
 ```shell
 wget -O ~/.fzfdocker-exec https://raw.githubusercontent.com/gumob/fzf-docker/main/fzf-docker-exec.template
 ```
+
 2. Customize the script as described in the file.
 
 For more in-depth information, please check out the original project's README in the [`Learning by doing`](https://github.com/MartinRamm/fzf-docker?tab=readme-ov-file#learning-by-doing) section.
