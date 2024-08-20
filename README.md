@@ -34,7 +34,7 @@ Please refer to the [fzf official documentation](https://github.com/junegunn/fzf
 ### Download `fzf-docker` to your home directory
 
 ```shell
-wget -O ~/.fzfdocker https://raw.githubusercontent.com/gumob/fzf-docker/main/fzfdocker
+wget -O ~/.fzfdocker https://raw.githubusercontent.com/gumob/fzf-docker/main/fzf-docker.sh
 ```
 
 ### How to set up using key bindings
@@ -137,10 +137,10 @@ The fallback command used to `exec` into a container is similar to `zsh || bash 
 Useful standards are already implemented for images like `mysql` or `mongo` (PRs to add more default commands are appreciated).
 
 You may however add custom commands that `docker exec in interactive mode` will then use to `exec` into a container. To do this
-1. Download the `.fzfdocker-exec.template` to your home directory, omitting the `.template` extension:
+1. Download the `.fzf-docker-exec.template` to your home directory, omitting the `.template` extension:
 
 ```shell
-wget -O ~/.fzfdocker-exec https://raw.githubusercontent.com/gumob/fzf-docker/main/fzfdocker-exec.template
+wget -O ~/.fzfdocker-exec https://raw.githubusercontent.com/gumob/fzf-docker/main/fzf-docker-exec.template
 ```
 2. Customize the script as described in the file.
 
