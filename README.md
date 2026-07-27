@@ -34,7 +34,7 @@ Please refer to the [fzf official documentation](https://github.com/junegunn/fzf
 ### Download `fzf-docker` to your home directory
 
 ```shell
-wget -O ~/.fzfdocker https://raw.githubusercontent.com/gumob/fzf-docker/main/fzf-docker.sh
+wget -O ~/.fzfdocker https://raw.githubusercontent.com/futamura/fzf-docker/main/fzf-docker.sh
 ```
 
 ### How to set up using key bindings
@@ -143,7 +143,7 @@ You may however add custom commands that `docker exec in interactive mode` will 
 1. Download the `.fzf-docker-exec.template` to your home directory, omitting the `.template` extension:
 
 ```shell
-wget -O ~/.fzfdocker-exec https://raw.githubusercontent.com/gumob/fzf-docker/main/fzf-docker-exec.template
+wget -O ~/.fzfdocker-exec https://raw.githubusercontent.com/futamura/fzf-docker/main/fzf-docker-exec.template
 ```
 
 2. Customize the script as described in the file.
